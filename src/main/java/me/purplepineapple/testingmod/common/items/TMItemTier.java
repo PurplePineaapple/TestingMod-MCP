@@ -8,7 +8,7 @@ import net.minecraft.util.LazyValue;
 import java.util.function.Supplier;
 
 public enum TMItemTier implements IItemTier {
-    PINK_STONE(1, 131, 4.0F, 1.0F, 5, () -> {
+    PINK_STONE(1, 300, 4.0F, 1.0F, 5, () -> {
         return Ingredient.fromItems(TMItems.PINK_STONE.get());
     });
 
