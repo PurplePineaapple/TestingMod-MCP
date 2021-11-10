@@ -1,0 +1,29 @@
+modLoader="javafml" #Mandatory
+
+loaderVersion="[36,)" # Mandatory
+
+license="All rights reserved" # Mandatory, For help choosing a license: https://choosealicense.com/. All rights reserved is default.
+
+issueTrackerURL="https://github.com/PurplePineaapple/TestingMod-MCP/issues" # Optional, an issue tracker URL for players to report issues about your mod
+
+[[mods]] # Mandatory
+
+modId="testing" # Manatory, Mod ID of your mod, should be the same in your main class
+
+# ${file.jarVersion} will substitute the value of the Implementation-Version as read from the mod's JAR file metadata
+# see the associated build.gradle script for how to populate this completely automatically during a build
+version="${file.jarVersion}" # Mandatory, your mod's version, use "${file.jarVersion} for version from build.gradle, or just use a regular string ex. "1.0"
+
+displayName="Testing Mod" # Mandatory, a display name displayed in the mod UI
+
+displayURL="https://github.com/PurplePineaaple/TestingMod-MCP/" # Optional, A URL for the "homepage" for this mod, displayed in the mod UI
+# A file name (in the root of the mod JAR) containing a logo for display
+logoFile="examplemod.png" #optional
+# A text field displayed in the mod UI
+credits="Thanks" #optional
+# A text field displayed in the mod UI
+authors="PurplePineapple" #optional
+# The description text for the mod (multi line!) (#mandatory)
+description='''
+A testing mod for MCP
+'''
