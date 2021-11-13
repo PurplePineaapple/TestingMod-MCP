@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "testing:blocks/tall_pink_star_flower_bottom"
+  }
+}

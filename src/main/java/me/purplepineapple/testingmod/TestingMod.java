@@ -2,6 +2,8 @@ package me.purplepineapple.testingmod;
 
 import me.purplepineapple.testingmod.core.registry.TMBlocks;
 import me.purplepineapple.testingmod.core.registry.TMItems;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -24,12 +26,13 @@ public class TestingMod
         TMBlocks.BLOCKS.register(bus);
 
         MinecraftForge.EVENT_BUS.register(this);
-        bus.addListener(this::clientSetup); // Used for renderers
+        bus.addListener(this::clientSetup); // Used for renderers / render layers
     }
 
 
     private void clientSetup(final FMLClientSetupEvent event) {
-        // Render layers, entity renderers, etc.
+        RenderTypeLookup.setRenderLayer(TMBlocks.PINK_STAR_FLOWER.get(), RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(TMBlocks.TALL_PINK_STAR_FLOWER.get(), RenderType.getCutout());
     }
 
 

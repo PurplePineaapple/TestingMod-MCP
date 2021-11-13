@@ -27,4 +27,10 @@ public class TMItems {
     // Block Items
     public static final RegistryObject<Item> PINK_STONE = ITEMS.register("pink_stone", () ->
             new BlockItem(TMBlocks.PINK_STONE.get(), new Item.Properties().group(TMItemGroup.TEST_MOD)));
+    public static final RegistryObject<Item> PINK_STAR_FLOWER = ITEMS.register("pink_star_flower", () ->
+            new BlockItem(TMBlocks.PINK_STAR_FLOWER.get(), new Item.Properties().group(TMItemGroup.TEST_MOD)));
+    public static final RegistryObject<Item> TALL_PINK_STAR_FLOWER = ITEMS.register("tall_pink_star_flower", () ->
+            new BlockItem(TMBlocks.TALL_PINK_STAR_FLOWER.get(), new Item.Properties().group(TMItemGroup.TEST_MOD)));
+
+
 }

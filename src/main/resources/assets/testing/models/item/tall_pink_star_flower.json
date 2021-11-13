@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "testing:blocks/tall_pink_star_flower_inventory"
+  }
+}
