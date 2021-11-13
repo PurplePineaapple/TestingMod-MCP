@@ -31,6 +31,8 @@ public class TMItems {
             new BlockItem(TMBlocks.PINK_STAR_FLOWER.get(), new Item.Properties().group(TMItemGroup.TEST_MOD)));
     public static final RegistryObject<Item> TALL_PINK_STAR_FLOWER = ITEMS.register("tall_pink_star_flower", () ->
             new BlockItem(TMBlocks.TALL_PINK_STAR_FLOWER.get(), new Item.Properties().group(TMItemGroup.TEST_MOD)));
+    public static final RegistryObject<Item> PINK_VINE = ITEMS.register("pink_vine", () ->
+            new BlockItem(TMBlocks.PINK_VINE.get(), new Item.Properties().group(TMItemGroup.TEST_MOD)));
 
 
 }

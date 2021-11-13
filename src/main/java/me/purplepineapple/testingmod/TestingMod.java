@@ -33,6 +33,8 @@ public class TestingMod
     private void clientSetup(final FMLClientSetupEvent event) {
         RenderTypeLookup.setRenderLayer(TMBlocks.PINK_STAR_FLOWER.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(TMBlocks.TALL_PINK_STAR_FLOWER.get(), RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(TMBlocks.PINK_VINE.get(), RenderType.getCutout());
+
     }
 
 

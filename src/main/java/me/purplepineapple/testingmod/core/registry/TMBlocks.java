@@ -3,6 +3,7 @@ package me.purplepineapple.testingmod.core.registry;
 import me.purplepineapple.testingmod.TestingMod;
 import me.purplepineapple.testingmod.common.blocks.TMFlowerBlock;
 import me.purplepineapple.testingmod.common.blocks.TMTallFlowerBlock;
+import me.purplepineapple.testingmod.common.blocks.TMVineBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
@@ -32,6 +33,9 @@ public class TMBlocks {
             new TMFlowerBlock(Effects.NAUSEA, 15, AbstractBlock.Properties.create(Material.PLANTS).doesNotBlockMovement().zeroHardnessAndResistance().sound(SoundType.PLANT)));
     // Custom Tall Flower
     public static final RegistryObject<Block> TALL_PINK_STAR_FLOWER = BLOCKS.register("tall_pink_star_flower", () ->
-            new TMTallFlowerBlock(AbstractBlock.Properties.create(Material.PLANTS).doesNotBlockMovement().zeroHardnessAndResistance().sound(SoundType.PLANT)));
+            new TMTallFlowerBlock(AbstractBlock.Properties.create(Material.TALL_PLANTS).doesNotBlockMovement().zeroHardnessAndResistance().sound(SoundType.PLANT)));
+    // Custom Vines
+    public static final RegistryObject<Block> PINK_VINE = BLOCKS.register("pink_vine", () ->
+            new TMVineBlock(AbstractBlock.Properties.create(Material.TALL_PLANTS).doesNotBlockMovement().tickRandomly().hardnessAndResistance(0.2F)));
 
 }
